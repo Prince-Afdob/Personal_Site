@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Mondwest';
+    src: url(../fonts/Mondwest-Regular.woff2) format('woff2'),
+        url(../fonts/Mondwest-Regular.woff) format('woff');
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Mondwest';
+    src: url(../fonts/Mondwest-Bold.woff2) format('woff2'),
+        url(../fonts/Mondwest-Bold.woff) format('woff');
+    font-weight: 700;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'NeueBit';
+    src: url(../fonts/NeueBit-Regular.woff2) format('woff2'),
+        url(../fonts/NeueBit-Regular.woff) format('woff');
+    font-display: swap
+}
+
+
+@font-face {
+    font-family: 'NeueBit';
+    src: url(../fonts/NeueBit-Bold.woff2) format('woff2'),
+        url(../fonts/NeueBit-Bold.woff) format('woff');
+    font-weight: 700;
+    font-display: swap
+}
+
+* {
+    color: var(--black);
+}
+
+h1 {
+    font-family: 'Mondwest', serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Mondwest', serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'NeueBit', sans-serif;
+    font-size: 24px;
+}
+
+h3.serif {
+    font-family: 'Mondwest', sans-serif;
+    font-size: 20px;
+}
+
+h3 .serif {
+    font-family: 'Mondwest', sans-serif;
+    font-size: 20px;
+
+}
+
+a {
+    text-decoration: underline;
+    transition-duration: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+a:hover {
+    letter-spacing: 0.05em;
+}
+
+p {
+    font-family: 'NeueBit', sans-serif;
+    font-size: 18px;
+}
+
+#small-title {
+    font-family: 'NeueBit', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+p.bold {
+    font-weight: bold;
+    font-family: 'Mondwest', serif;
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a>p {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px) {
+
+    h3 {
+        font-family: 'NeueBit', sans-serif;
+        font-size: 30px;
+    }
+
+    h3.serif {
+        font-family: 'Mondwest', sans-serif;
+        font-size: 24px;
+    }
+
+    h3 .serif {
+        font-family: 'Mondwest', sans-serif;
+        font-size: 24px;
+    }
+
+    p {
+        font-family: 'NeueBit', sans-serif;
+        font-size: 20px;
+    }
+
+    p.bold {
+        font-weight: bold;
+        font-family: 'Mondwest', serif;
+        font-size: 16px;
+    }
+
+
+}

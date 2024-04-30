@@ -1,0 +1,159 @@
+.innerPage__window {
+  width: 90vw;
+  position: fixed;
+  left: 5vw;
+  height: 88vh;
+  background-color: white;
+  outline: 1px solid var(--black);
+  z-index: 201;
+  top: 5.5vh;
+  overflow: scroll;
+}
+
+.innerPage__background {
+  width: 100vw;
+  position: absolute;
+  z-index: 111;
+  opacity: 40%;
+  /* background-color: red; */
+}
+
+
+.innerPage__window__bar {
+  height: 24px;
+  outline: 1px solid var(--black);
+  background-color: var(--secondary);
+  text-decoration: none;
+  position: fixed;
+  width: inherit;
+  z-index: 1;
+  transition-duration: 0s;
+
+}
+
+.innerPage__window__circles {
+  display: flex;
+  margin-left: 10px;
+
+
+}
+
+.innerPage__window__circle {
+  margin-top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid var(--black);
+  margin-right: 6px;
+  transition: 0.2s;
+
+}
+
+.innerPage__window__circle__close:hover {
+  background-color: var(--accent);
+  cursor: pointer;
+}
+
+.innerPage__window__bar__info {
+  margin-left: 4px;
+  margin-top: 5px;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+
+.innerPage__window__main__text {
+  padding: 16px;
+  margin-top: 24px;
+}
+
+.innerPage__window__main__text__sum {
+  margin-bottom: 20px;
+}
+
+.innerPage__window__main__text__link__a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.innerPage__window__main__text__link {
+  margin-bottom: 20px;
+}
+
+
+/* .innerPage__window__main__text__info__sec {
+  display: flex;
+} */
+
+.innerPage__window__display {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60vh;
+  overflow-y: hidden;
+  outline: 1px solid var(--black);
+  background: #242424;
+}
+
+.innerPage__window__display__img {
+  width: 100%;
+  outline: 1px solid var(--black);
+  margin-bottom: -3px;
+}
+
+.innerPage__back {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid var(--black);
+  z-index: 200;
+  bottom: 12px;
+  left: 12px;
+  cursor: pointer;
+}
+
+.innerPage__back__glyph {
+  font-family: 'NeueBit', sans-serif;
+  font-weight: bold;
+  font-size: 29px;
+
+  text-align: center;
+  margin: auto;
+  line-height: 175%;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .innerPage__window__main {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+  }
+
+  .innerPage__window__main__text {
+    width: 45vw;
+    padding: 20px;
+
+  }
+
+  .innerPage__window__main__text__container {
+    width: calc(45vw - 16px);
+    position: fixed;
+  }
+
+  .innerPage__window__display {
+    width: 45vw;
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+    overflow: scroll;
+    outline: 1px solid var(--black);
+    margin-top: 24px;
+    overflow-y: hidden;
+  }
+}

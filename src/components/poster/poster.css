@@ -1,0 +1,9 @@
+.poster {
+  background-color: var(--background);
+  position: absolute;
+}
+
+.poster__img {
+  border: 0.685237px solid var(--black);
+  vertical-align: bottom;
+}
